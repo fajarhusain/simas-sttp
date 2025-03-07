@@ -98,7 +98,8 @@
                     @method('PUT')
                     <div class="card-body text-center">
                         <div class="mb-3">
-                            <img src="{{ $data->profile_picture }}" alt="user-avatar" class="profile-picture" id="uploadedAvatar">
+                            <img src="{{ asset('storage/' . $data->profile_picture) }}" alt="user-avatar" class="profile-picture" id="uploadedAvatar">
+
                         </div>
                         <div class="mb-3 upload-button">
                             <label for="upload" class="btn btn-primary me-2 mb-2" tabindex="0">
